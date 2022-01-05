@@ -11,12 +11,14 @@ namespace FactorialFinder
         static void Main(string[] args)
         {
             //The Factorial of a positive integer, n, is defined as the product of the sequence n, n-1, n-2, ...1 and the factorial of zero, 0, is defined as being 1. 
-
+            // https://stackoverflow.com/questions/29027000/c-sharp-to-calculate-factorial
             //Solve this using both loops and recursion
 
             Console.WriteLine("Welcome to Factorial Finder");
             Console.WriteLine("Please enter an integer");
             int num = int.Parse(Console.ReadLine());
+
+
         }
     }
 }
