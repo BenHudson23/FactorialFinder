@@ -18,19 +18,17 @@ namespace FactorialFinder
 
             Console.WriteLine("Welcome to Factorial Finder");
             Console.WriteLine("Please enter a number to get its factorial: ");
-            num = int.Parse(Console.ReadLine());
-
-            while (num > 0)
+            num = int.Parse(Console.ReadLine());         
+            
+            n = num;
+            for (int i = n - 1; i > 0; i--)
             {
-                n = num;
-                for (int i = n - 1; i > 0; i--)
-                {
-                    n *= i;
-                }
-                Console.WriteLine("Factorial of {0}! = {1}\n", num, n);
-                num--;
-            }
-
+               
+                n *= i;
+            } 
+            
+            Console.WriteLine("Factorial of {0}! = {1}\n", num, n);               
+            
             Console.ReadLine();
         }
     }
