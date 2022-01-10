@@ -16,10 +16,12 @@ namespace FactorialFinder
 
             int num, n;
 
+            // asks for users input
             Console.WriteLine("Welcome to Factorial Finder");
             Console.WriteLine("Please enter a number to get its factorial: ");
             num = int.Parse(Console.ReadLine());         
             
+            // calculates factorial
             n = num;
             for (int i = n - 1; i > 0; i--)
             {
@@ -27,6 +29,7 @@ namespace FactorialFinder
                 n *= i;
             } 
             
+            // displays factorial of users input
             Console.WriteLine("Factorial of {0}! = {1}\n", num, n);               
             
             Console.ReadLine();
